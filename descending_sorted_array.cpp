@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int ascendingBinarySearch(int arr[],int n,int key)
+int descendingBinarySearch(int arr[],int n,int key)
 {
     int start=0;
     int end=n-1;
@@ -28,7 +28,7 @@ int main()
     int n=sizeof(arr)/sizeof(int);
     int key;
     cin>>key;
-    int m=ascendingBinarySearch(arr,n,key);
+    int m=descendingBinarySearch(arr,n,key);
     if(m==-1)
     {
         cout<<key<<" is not present";
