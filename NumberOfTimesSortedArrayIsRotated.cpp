@@ -22,7 +22,7 @@ int rotated(int arr[],int n)
         {
             result=n-mid;
         }
-        if(arr[mid]<=arr[end])
+       if(arr[mid]<=arr[end])
         {
             end=mid-1;
         }
@@ -36,7 +36,7 @@ int rotated(int arr[],int n)
 
 int main()
 {
-    int arr[]={18,2,5,6,8,11,12,15};
+    int arr[]={11,12,15,18,2,5,6,8};
     int n=sizeof(arr)/sizeof(int);
     cout<<rotated(arr,n);
 
